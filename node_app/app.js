@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res)=>{
-    res.send('ok this is a rsponse')
+    res.send('ok this is a rsponse from the server')
 })
 
 

@@ -1,5 +1,5 @@
 FROM node:alpine
-WORKDIR ./app
+WORKDIR /app
 # this wil optimize the build time as it will copy json file first and installed, if json file didn't change and you rebuild it will be fast enough to amaze you
 COPY ./package.json ./ 
 RUN npm install

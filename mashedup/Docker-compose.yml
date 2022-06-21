@@ -7,9 +7,10 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - /app/node_modules
+      - /app/node_modules 
       - ./client:/app
   node-server:
+    # container_name: name
     restart: always
     build:
       context: ./server
@@ -33,3 +34,7 @@ services:
     image: 'nginx:latest'
     ports:
       - '80:80'
+volumes:
+  - ./client:/app
+  - ./server:/app
+  - ./worker:/app

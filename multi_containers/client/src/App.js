@@ -1,13 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 
+// Import Components
+import {Nav, Footer} from './Components/index'
+
 function App() {
   return (
     <div className="App">
+      <Nav />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Apply and do more <code>src/App.js</code> and save to reload.
+          make and do more <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -18,6 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Footer />
     </div>
   );
 }

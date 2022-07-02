@@ -7,5 +7,5 @@ app.get('/', (req, res) => {
 
 PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
-  console.log(`Server is pl aying and listening on port ${PORT} 🚀🚀!`);
+  console.log(`Server is running and listening on port ${PORT} 🚀🚀!`);
 })

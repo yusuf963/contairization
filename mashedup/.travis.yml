@@ -1,0 +1,8 @@
+language: generic
+sudo: required
+services:
+  - docker
+before_install:
+  - docker build-t yusuf/client:v0 -f Dockerfile.dev-client .
+script:
+  - docker run -e CI=true yusuf/client:v0 npm run test -- --coverage

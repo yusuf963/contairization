@@ -19,7 +19,7 @@ sub.on('message', (channel, message) => {
 })
 sub.subscribe('insert')
 
-PORT = process.env.PORT || 5002;
+PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
   console.log(`'Worker app listening on port ${PORT}!'`);
 })

@@ -58,7 +58,7 @@ app.post('/values', async (req, res) => {
 });
 
 
-PORT = process.env.PORT || 5000;
+PORT = process.env.PORT || 5004;
 app.listen(PORT, () => {
   console.log(`Server is running and listening on port ${PORT} 🚀🚀!`);
 })

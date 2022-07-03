@@ -14,8 +14,10 @@ const fib = (index) => {
   return fib(index - 1) + fib(index - 2)
 
 }
-
-console.log(fib(4))
+sub.on('message', (channel, message) => {
+  redisClient.hSet('value', message, fib(parseInt(message)))
+})
+sub.subscribe('insert')
 
 PORT = process.env.PORT || 5002;
 app.listen(PORT, () => {
